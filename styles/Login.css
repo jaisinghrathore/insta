@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN BODY */
+body {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa !important;
+}
+
+/* WRAPER CONTAINER WITH 90% OF WIDTH */
+.container {
+    padding: 1.9rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    width: 90%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+/* INCLUDING BOTH LEFT AND RIGHT COLUMN */
+.column {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* CSS FOR LEFT COLUMN */
+.corousel {
+    position: relative;
+}
+
+.innerCarousel {
+    position: absolute;
+    right: 3.37em;
+    top: 1.25rem;
+}
+
+/* ANIMATION OF CAROUSEL */
+@keyframes mymove {
+    from {
+        z-index: 1;
+    }
+    to {
+        z-index: 3;
+    }
+}
+
+.innerCarousel1 {
+    animation: mymove 4s linear 2s infinite alternate none;
+}
+
+.innerCarousel2 {
+    animation: mymove 6s linear 4s infinite alternate none;
+}
+
+.innerCarousel3 {
+    z-index: 2;
+}
+
+/* CSS FOR LEFT COLUMN ENDS*/
+
+/* DEDICATED CSS FOR RIGHT COLUMN */
+.inputBoxcolumn {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 1.56rem;
+}
+
+/*  input box MAIN STRUCTURE DEDICATED CSS */
+.inputBox {
+    height: 25rem;
+    width: 21.9rem;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem 2.19rem;
+}
+
+/* MAIN PARENT OF INPUT,BUTTON AND LINKS IN MAIN STRUCTURE OF INPUT BOX CSS */
+.form {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoSection {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.form > .child {
+    flex: 1;
+    width: 100%;
+}
+
+.form > .child > input {
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    padding: 0.6rem 0.5rem;
+    width: 100%;
+}
+
+.form > .child > input:focus {
+    outline: none;
+    border: 1px solid grey;
+}
+
+.placeholder {
+    font-size: 0.87rem;
+    color: #8e8e8e;
+    position: absolute;
+    left: 0.6rem;
+    top: 0.5rem;
+    transition: all 0.3s;
+}
+
+.loginButton {
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 1.25rem;
+    background-color: #0095f6;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    padding: 0.4rem 0;
+    box-sizing: content-box;
+    font-weight: bold;
+    position: relative;
+}
+
+.or {
+    display: flex;
+    justify-content: center;
+}
+
+.fbOne {
+    display: flex;
+    justify-content: center;
+}
+
+.facebook {
+    color: rgb(56, 81, 133);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 0 0 0.6rem;
+    font-size: 0.9rem;
+}
+
+.whiteFbLogo {
+    display: none;
+}
+
+.fbButton {
+    padding: 0.37rem 0.9rem;
+    border-radius: 3px;
+    color: #429df6;
+    display: flex;
+    justify-content: center;
+}
+
+.forgetPass {
+    color: rgb(56, 81, 133);
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0.6rem;
+}
+/* MAIN PARENT OF INPUT,BUTTON AND LINKS IN MAIN STRUCTURE OF INPUT BOX CSS ENDS */
+
+/* SIGN UP BOX CSS */
+.SignUpBox {
+    height: 4rem;
+    width: 21.9rem;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 1.25rem;
+    margin-top: 0.6rem;
+}
+
+/* DOWNLOAD INSTA CSS */
+.playLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.25rem;
+    width: 21.9rem;
+}
+
+/*  INNER WRAP OF THE DOWNLOAD INSTA CSS */
+.innerWrap {
+    padding-top: 0.6rem;
+}
+
+.innerWrap > img {
+    width: 8.5rem;
+    height: 2.5;
+}
+
+/* DEDICATED CSS FOR RIGHT COLUMN ENDS*/
+
+/* FOOTER CSS */
+.footer {
+    margin-top: 1.25rem;
+    padding: 1rem 1.25rem;
+}
+
+.upperDeck,
+.centerDeck,
+.lowerDeck {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.upperDeck > div,
+.centerDeck > div,
+.lowerDeck > div {
+    font-size: 0.75rem;
+    color: #8e8e8e;
+    padding: 0 0.2rem 0 0.2rem;
+    margin-top: 0.6rem;
+}
+
+/* Responsive  CSS DESIGNS USING MEDIA QUERY*/
+
+/* 450px TO 875PX RESPONSIVE */
+
+@media screen and (max-width: 875px) {
+    body {
+        font-size: 14px !important;
+    }
+
+    /* HERE WE GIVE WIDTH TO 80%. */
+    .container {
+        width: 80%;
+        margin: auto;
+        padding: 0px;
+    }
+
+    .inputBoxcolumn {
+        align-items: center;
+    }
+    .carouselCol {
+        display: none;
+    }
+}
+
+/* 300PX TO 450px */
+
+@media screen and (max-width: 450px) {
+    body {
+        font-size: 12px !important;
+        background-color: #fff !important;
+    }
+
+    /* HERE WE GIVE WIDTH TO 100% AGAIN TO MAKE IT SUPER RESPONSIVE. */
+    .container {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .inputBoxcolumn {
+        align-items: center;
+    }
+
+    .playLinks {
+        display: none;
+    }
+
+    .inputBox {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0.6rem 2.19rem;
+    }
+
+    .SignUpBox {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .fbOne {
+        order: 1;
+        align-items: center;
+    }
+
+    .or {
+        order: 2;
+    }
+
+    .childInp1 {
+        order: 3;
+    }
+
+    .childInp2 {
+        order: 4;
+    }
+
+    .childLoginButton {
+        order: 5;
+    }
+
+    .selectLang {
+        position: absolute;
+        top: 1.25rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .fbButton {
+        background-color: #0095f6;
+        padding: 0.5rem 1.25rem;
+        border-radius: 3px;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .facebook {
+        color: white;
+    }
+
+    .forgetPass {
+        display: none;
+    }
+
+    .whiteFbLogo {
+        display: block;
+    }
+
+    .blueFbLogo {
+        display: none;
+    }
+
+    .loginButton::after {
+        content: "Forget Password?";
+        color: #0095f6;
+        position: absolute;
+        top: 2.5rem;
+    }
+
+    .upperDeck > div,
+    .centerDeck > div,
+    .lowerDeck > div {
+        font-size: 0.75rem;
+        color: #8e8e8e;
+        padding: 0 0.6rem;
+        margin-top: 0.6rem;
+    }
+
+    .footer {
+        background-color: #fafafa;
+        padding: 1rem 1.25rem;
+    }
+}
+
+/* 0PX TO 300px */
+
+@media screen and (max-width: 300px) {
+    body {
+        font-size: 8px;
+    }
+    .container {
+        width: 100%;
+        overflow: hidden;
+    }
+    .inputBox {
+        height: 25rem;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        right: 30px;
+    }
+}
