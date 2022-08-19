@@ -101,17 +101,17 @@ body {
     align-items: center;
     width: 100%;
     height: 120px;
-    background-color: white;
-    box-shadow: 1px 1px 1px 1px silver;
+    background-color: #efefef;
+    box-shadow: 1px 1px 1px 1px rgb(223, 222, 222);
     padding: 10px;
     padding-right: 0;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 30px;
     overflow: hidden;
     overflow-x: auto;
     position: relative;
 }
-
+/*
 .fa {
     background-color: #fafafa;
     padding: 6px 8px;
@@ -127,6 +127,7 @@ body {
     position: absolute;
     right: 10px;
 }
+*/
 
 .statusIcons::-webkit-scrollbar {
     display: none;
@@ -154,7 +155,7 @@ body {
     height: auto;
     background: #efefef;
     border-bottom: 20px solid #fafafa;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .detail {
@@ -363,6 +364,7 @@ body {
 .sbtn:hover {
     color: #0095f6;
     background-color: white;
+    cursor: pointer;
 }
 
 .feedWrap {
@@ -372,6 +374,7 @@ body {
 .footer {
     margin-top: 20px;
     min-width: 500px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer > ul {
